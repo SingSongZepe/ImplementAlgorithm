@@ -26,7 +26,7 @@ class GraphForTraverse:
         else:
             self.root = root
 
-    # even sometimes that starts with any node, you can't traverse all node
+    # even sometimes which node starts with, you can't traverse all node
     # but this function will find the node that starts with we can traverse nodes as many as possible
     def search_root(self) -> int:
         max_included = 0
@@ -109,7 +109,7 @@ def test1() -> None:
     edges = [[0, 1], [0, 3], [3, 2], [2, 1], [2, 4], [1, 4]]
     gft_1 = GraphForTraverse(n, edges)
     print()
-    
+
     # indirect-graph
     dgft = GraphForTraverse(n, edges, False)
     dgft.traverse_BFS()
